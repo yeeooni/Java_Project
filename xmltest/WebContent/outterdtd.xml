@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE book SYSTEM "outter.dtd"[
+
+	<!ENTITY kitry "키트리">
+
+]>
+
+
+
+
+	<book>
+		<title>java &amp; xml</title>
+		<author>&quot;홍길동&quot;은 &kitry; 에 다닙니다.</author>
+		<price>3만원</price>
+		<description>&quot;이 책은 &apos;홍길동&apos;이 작성한 3만원짜리 책입니다.&quot;</description>
+	</book>

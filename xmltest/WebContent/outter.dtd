@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!ELEMENT book (title,author,price,description?)>
+	<!-- title이라는 엘리먼트 안에 문자데이터(#PCDATA) 가 있다. -->
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT author (#PCDATA)>
+	<!ELEMENT price (#PCDATA)>
+	<!ELEMENT description (#PCDATA)>
+	

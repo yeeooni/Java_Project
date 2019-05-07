@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--DOCTYPE의 뒤에는 루트 엘리먼트가 와야한다. -->
+<!DOCTYPE book[
+
+	<!-- book이라는게 엘리먼트라는걸 선언했고 그 엘리먼트 안에 title,author,price라는 엘리먼트가 있다. -->
+	<!ELEMENT book (title,author,price,description?)>
+	<!-- title이라는 엘리먼트 안에 문자데이터(#PCDATA) 가 있다. -->
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT author (#PCDATA)>
+	<!ELEMENT price (#PCDATA)>
+	<!ELEMENT description (#PCDATA)>
+]>
+
+<!-- 실행이되면 well-formed 문서 -->
+	<book>
+		<title>java &amp; xml</title>
+		<author>&quot;홍길동&quot;</author>
+		<price>3만원</price>
+		<description>&quot;이 책은 &apos;홍길동&apos;이 작성한 3만원짜리 책입니다.&quot;</description>
+	</book>

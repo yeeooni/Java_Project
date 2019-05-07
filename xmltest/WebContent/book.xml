@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE booklist SYSTEM "book.dtd">
+
+<booklist>
+	
+	<book isbn = "책1" kind = "소설">
+		
+		<title>상실의시대</title>
+		
+		<author>
+			<name sex ="남">무라카미하루키</name>
+			<tel>010-2111-6422</tel>
+			<adress>서울시 금천구 가산동</adress>
+		</author>
+		
+		<publisher>출판사</publisher>
+		<price>20000원</price>
+		<description>반가워</description>
+	
+	</book>
+
+	<book isbn="책2" kind = "소설">
+		
+		<title>시계태엽새</title>
+		
+		<author>
+			<writer>무라카미하루키</writer>
+			<tel>010-2111-6422</tel>
+			<adress>서울시 구로구 키트리</adress>
+		</author>
+		
+		<publisher>출판사</publisher>
+		<price>15550원</price>
+	
+	</book>
+	
+</booklist>
