@@ -1,0 +1,35 @@
+package com.kitri.loopTest;
+public class SwitchTest1 {
+	public static void main(String[] args) {
+
+			int num = 3;
+			switch (num){
+			case 1: 		System.out.println("1입니다."); break;
+						case 2: 		System.out.println("2입니다."); break;
+									case 3: 		System.out.println("3입니다."); break;
+												default: 		System.out.println("123아닙니다.");
+
+			}
+
+				char c = 'a';
+
+				switch (c){
+				case 97: System.out.println("a입니다."); break;
+				case 98: System.out.println("b입니다."); break;
+				case 99: System.out.println("c입니다."); break;
+				default : System.out.println("abc아닙니다.");
+				
+				}
+
+
+				// 
+					String str = "java";
+					switch (str){
+					case "oracle": System.out.println("oracle입니다."); break;
+					case "java" : System.out.println("java입니다."); break;
+					case "C" : System.out.println("C입니다."); break;
+					default : System.out.println("아무것도 아닙니다.");
+					
+					}
+	}
+}
