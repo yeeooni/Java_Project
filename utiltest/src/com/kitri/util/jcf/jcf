@@ -1,0 +1,13 @@
+** Jcf (Java collection Framework) 크기가 유동적이다.
+
+
+		collection 										Map
+
+		List			 Set
+		순서가 유지된다.		순서가 유지되지 않는다.
+		중복 데이터 가능하다.	중복 데이터가 불가능하다.
+		
+------------------------------------------------------------------------------		
+		ArrayList		HashSet			HashMap 		Hashtable
+		
+		Vector											Properties
