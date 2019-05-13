@@ -11,11 +11,12 @@
 					//배열에 저장되는 객체는 자바스크립트
 					var allObj = check[0];
 					var $allObj = $(allObj);
-					$.allObj.click(function(){
+					$allObj.click(function(){
 						for(var i = 0; i < check.length; i ++){
 							//$(check[i]).attr("checked", $(allObj).attr("checked"));
 							$(check[i]).prop("checked", $allObj.prop("checked"));
-					});
+					}
+				});
 			});
 	
 	
