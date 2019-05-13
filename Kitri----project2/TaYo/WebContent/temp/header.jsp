@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+<% 
+	String root = request.getContextPath();
+%>
+    
 <!--
 author: W3layouts
 author URL: http://w3layouts.com
@@ -24,13 +29,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             window.scrollTo(0, 1);
         }
     </script>
+
+    <!-- To be fixed modal window is not opened... -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 	
 	<!-- css files -->
     <link href="/TaYo/css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
     <link href="/TaYo/css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
     <link href="/TaYo/css/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
-	<!-- //css files -->
 	
+	<!-- //css files -->
 	<link href="/TaYo/css/css_slider.css" type="text/css" rel="stylesheet" media="all">
 
 	<!-- google fonts -->
@@ -54,7 +65,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<ul class="menu ml-auto mt-1">
 				<li class=""><a href="">관광지/맛집 추천</a></li>
 				<li class=""><a href="">여행지 일정 추천</a></li>
-				<li class="active"><a href="/TaYo/tayoschedule/schedule.jsp">일정 짜기</a></li>
+				<li class="active"><a href="<%=root%>/schedule?act=schedule">일정 짜기</a></li>
 				<li class=""><a href="/TaYo/tayotogether/tayotogether.jsp">함께 타기</a></li>
 				<li class=""><a href="">About 타요타요</a></li>
 				<li class="booking"><a href="">Login</a></li>
