@@ -9,17 +9,15 @@
 			<!-- jquery 구문  -->
 			<script>
 			
-			$(document).ready(function(){
+			$(function({
 				/* var all = document.querySelectorAll("body > p"); */
 				var $all = $("body > p");
 				
 				$all.click(function(){
-				
 					/* 그냥 this만 쓰면 자바스크립트에서 사용할 수 있는 영역 
 						jquery에서 제공하는 다양한 메소드를 사용할 수 있다. */
 					/*  this.style.display = 'none';  */
 					$(this).hide();
-					
 				});
 			});
 			
