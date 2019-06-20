@@ -66,10 +66,10 @@ public class RepBoardDAO {
 		StringBuffer sql = new StringBuffer();
 		sql.append("SELECT * " + 
 						"FROM(SELECT rownum r, repboard.* \n" + 
-									"	FROM repboard \n"
-				+ 					"	START WITH parent_seq = 0 \n" + 
-									"	CONNECT BY PRIOR board_seq = parent_seq \n"
-				+ 					"	ORDER SIBLINGS BY board_seq DESC) \n" 
+							"	FROM repboard \n"
+		+ 					"	START WITH parent_seq = 0 \n" + 
+							"	CONNECT BY PRIOR board_seq = parent_seq \n"
+		+ 					"	ORDER SIBLINGS BY board_seq DESC) \n" 
 				+ 		"WHERE r BETWEEN ? AND ? ");
 
 		Connection conn = null;
